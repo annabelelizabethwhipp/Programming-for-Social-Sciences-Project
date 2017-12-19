@@ -158,3 +158,16 @@ for i in range (num_of_agents):
     else:
         matplotlib.pyplot.scatter(agents[i].x,agents[i].y)
 matplotlib.pyplot.show()
+
+
+
+# Writing the new mapenvironment(density map)to a csv file 
+
+f2= open ('mapenvironmentout.csv', 'w', newline= '')
+writer = csv.writer (f2, delimiter = ' ')
+for row in mapenvironment:
+    writer.writerow(row)
+f2.close
+    
+
+        matplotlib.pyplot.scatter(agents[i].x,agents[i].y)
