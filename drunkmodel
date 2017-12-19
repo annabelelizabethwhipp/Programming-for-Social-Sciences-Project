@@ -170,4 +170,3 @@ for row in mapenvironment:
 f2.close
     
 
-        matplotlib.pyplot.scatter(agents[i].x,agents[i].y)
