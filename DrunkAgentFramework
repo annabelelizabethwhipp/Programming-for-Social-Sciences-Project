@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov 14 13:31:06 2017
+
+@author: annabelwhipp
+
+Assessment 2: Planning for drunks
+Completed as part of Programming for Social Science: Core Skills
+GEOG5995M
+ 
+"""
+
+
+
+# Imports
+
+import random
+
+
+
+# Define a class of agent in an environment 
+# The agents are aware of the environment, agents, the numbers allocated to 
+# the houses, the X and Y coordinates of the pubs and whether they have reached
+# their home or not. The agents begin knowing that they are not at home.
+
+class Agent ():
+
+         
+    def __init__(self, environment,agents, number, xpub, ypub):
+        self.environment = environment
+        self.agents = agents
+        self.house_number = number
+        self.x = xpub
+        self.y = ypub
+        self.is_home = False
+
+
+
+# Moving agents in the environment. 
+
+    def move (self):
+        if random.random() < 0.5:
+            newx=self.x+1
+            if newx<len(self.environment) and newx>0:
+                self.x = newx
+        else:
+            newx=self.x-1
+            if newx<len(self.environment) and newx>0:
+                self.x = newx
+        
+        if random.random() < 0.5:
+             newy=self.y+1
+             if newy<len(self.environment) and newy>0:
+                self.y = newy
+        else:
+            newy=self.y-1
+            if newy<len(self.environment) and newy>0:
+                self.y = newy
+            
+               
+            
