@@ -28,4 +28,4 @@ Here is a step by step guide to the code:
 
 11. The agents are displayed statically on a map, the colour of the agents is turned to white when they reach their home. 
 
-12. The desnity map saves to a csv file.
+12. The density map saves to a csv file.
