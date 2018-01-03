@@ -3,7 +3,8 @@ GEOG5995M Planning for Drunks Assessment
 
 The basic concept for this assessment was to build an ABM which models drunk people leaving a pub and returning to their home. 
 The drunks leave the pub one at a time, and a new drunk can only leave the oub when the prvious drunk has reached home.The 
-model is set to run until all the drunks reach home.
+model is set to run until all the drunks reach home. To run the model the code for the drunkmodel and DrunkAgentFramework is needed. The drunk.plan.txt is needed as this file is read in for the environment.
+
 Here is a step by step guide to the code:
 
 1. It reads in drunk.plan.txt. This file is the environment data.
